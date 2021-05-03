@@ -4,7 +4,7 @@
 
   tasks:
   - name: print play1 variable vaule
-    shell: cat "{{ PLAY1VAR.stdout }}" | tail -1
+    shell: cat "{{PLAY1VAR.stdout}}" | tail -1
     register: PLAY2_RESULTS
 
-  - debug: msg="{{ PLAY2_RESULTS.stdout }}"
+  - debug: msg="{{PLAY2_RESULTS.stdout}}"
