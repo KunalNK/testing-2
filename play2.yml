@@ -3,9 +3,5 @@
   gather_facts: false
 
   tasks:
-   - name: Echo the output PLAY1 variable vaule
-     shell: cat "{{PLAY1VAR.stdout}}" | tail -1
-     register: PLAY2_RESULTS
-
-   - name: Debug my_personal_variable
-     debug: msg="{{ PLAY2_RESULTS.stdout }}"
+   - name: DEBUG - output downtime_id
+      var: downtime_id
