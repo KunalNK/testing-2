@@ -5,6 +5,6 @@
   tasks:
   - name: Debug my_personal_variable
     debug:
-      var: downtime_id
+      var: cat downtime_id | tail -n 1
    
    
