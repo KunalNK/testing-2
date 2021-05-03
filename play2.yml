@@ -8,5 +8,5 @@
      register: PLAY2_RESULTS
 
    - name: Debug my_personal_variable
-      debug:
+     debug:
         var: downtime_id
