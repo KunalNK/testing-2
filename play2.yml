@@ -1,3 +1,4 @@
+---
 - name: Echo the output PLAY1 variable vaule
   shell: cat "{{PLAY1VAR.stdout}}" | tail -1
   register: PLAY2_RESULTS
