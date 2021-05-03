@@ -2,9 +2,11 @@
 - hosts: my-vm
   gather_facts: false
 
-  tasks:  
-  - name: Echo the output variable vaule
-    shell: cat "{{ PLAY1VAR.stdout }}" | tail -1
-    register: PLAY2_RESULTS
+  tasks:
+   - name: Echo the output PLAY1 variable vaule
+     shell: cat "{{PLAY1VAR.stdout}}" | tail -1
+     register: PLAY2_RESULTS
 
-  - debug: msg="{{ PLAY2_RESULTS.stdout }}"
+   - name: Debug my_personal_variable
+      debug:
+        var: downtime_id
