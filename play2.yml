@@ -4,4 +4,5 @@
 
   tasks:
    - name: DEBUG - output downtime_id
+     debug:
        var: downtime_id
